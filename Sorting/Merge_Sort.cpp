@@ -39,7 +39,7 @@ void merge(int A[], int p,int q, int r){
 void merge_sort(int A[], int p, int r){
     int q;
     if (p<r){
-        q = (p+r)/2;
+        q = (p+r)/2; //or, int q = p+(r-p)/2 
         merge_sort(A,p,q);
         merge_sort(A,q+1,r);
         merge(A,p,q,r);
